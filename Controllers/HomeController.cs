@@ -13,12 +13,19 @@ namespace DifferenetActionMethods.Controllers
             return View();
         }
 
-        public RedirectResult About()
+        //public RedirectResult About()
+        //{
+
+        //   // ViewBag.Message = "Your application description page.";
+
+        //    return Redirect("Contact");
+        //}
+        public ActionResult About()
         {
-            
+
             //ViewBag.Message = "Your application description page.";
 
-            return Redirect("Contact");
+            return RedirectToAction("Index","Second",new{ fname="jai", lname="son");
         }
 
         public ActionResult Contact()
