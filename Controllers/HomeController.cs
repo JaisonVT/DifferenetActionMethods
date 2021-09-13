@@ -23,9 +23,12 @@ namespace DifferenetActionMethods.Controllers
         public ActionResult About()
         {
 
-            //ViewBag.Message = "Your application description page.";
+            //ViewBag.Message = "Your application description page."
 
-            return RedirectToAction("Index","Second",new{ fname="jai", lname="son");
+            //return RedirectToAction("Index","Second",new{ fname="jai", lname="son");
+            //return RedirectToRoute("SecondE");
+            return JavaScript("alert(gau)");
+                
         }
 
         public ActionResult Contact()

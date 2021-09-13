@@ -18,6 +18,13 @@ namespace DifferenetActionMethods
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "SecondE",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Second", action = "Index", id = UrlParameter.Optional }
+            );
+
         }
     }
 }
